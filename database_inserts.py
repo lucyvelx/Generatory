@@ -13,7 +13,7 @@ mycursor = mydb.cursor()
 
 
 def man_input(input, value):
-    sql = "INSERT INTO man_vstupy (absolutna_adresa, hodnota, cas) VALUES(%s,%s,%s)";
+    sql = "INSERT INTO man_vstupy (absolutna_adresa, hodnota, cas) VALUES(%s,%s,%s)"
     now = datetime.now()
     timeNow = dt_string = now.strftime("%Y-%m-%d %H:%M:%S")
     val =(input, value, timeNow)
@@ -22,7 +22,7 @@ def man_input(input, value):
     print(mycursor.rowcount, "record inserted to table man_vstupy.")
 
 def man_output(output, value):
-    sql = "INSERT INTO man_vystupy (absolutna_adresa, hodnota, cas) VALUES(%s,%s,%s)";
+    sql = "INSERT INTO man_vystupy (absolutna_adresa, hodnota, cas) VALUES(%s,%s,%s)"
     now = datetime.now()
     timeNow = dt_string = now.strftime("%Y-%m-%d %H:%M:%S")
     val =(output, value, timeNow)
@@ -31,7 +31,7 @@ def man_output(output, value):
     print(mycursor.rowcount, "record inserted to table man_vystupy.")
 
 def man_memory(memory, value):
-    sql = "INSERT INTO man_vystupy (absolutna_adresa, hodnota, cas) VALUES(%s,%s,%s)";
+    sql = "INSERT INTO man_vystupy (absolutna_adresa, hodnota, cas) VALUES(%s,%s,%s)"
     now = datetime.now()
     timeNow = dt_string = now.strftime("%Y-%m-%d %H:%M:%S")
     val =(memory, value, timeNow)
@@ -40,7 +40,7 @@ def man_memory(memory, value):
     print(mycursor.rowcount, "record inserted to table man_memory.")
 
 def tr_input(input, value):
-    sql = "INSERT INTO tr_vstupy (absolutna_adresa, hodnota, cas) VALUES(%s,%s,%s)";
+    sql = "INSERT INTO tr_vstupy (absolutna_adresa, hodnota, cas) VALUES(%s,%s,%s)"
     now = datetime.now()
     timeNow = dt_string = now.strftime("%Y-%m-%d %H:%M:%S")
     val =(input, value, timeNow)
@@ -49,7 +49,7 @@ def tr_input(input, value):
     print(mycursor.rowcount, "record inserted to table tr_vstupy.")
 
 def tr_output(output, value):
-    sql = "INSERT INTO tr_vystupy (absolutna_adresa, hodnota, cas) VALUES(%s,%s,%s)";
+    sql = "INSERT INTO tr_vystupy (absolutna_adresa, hodnota, cas) VALUES(%s,%s,%s)"
     now = datetime.now()
     timeNow = dt_string = now.strftime("%Y-%m-%d %H:%M:%S")
     val =(output, value, timeNow)
@@ -58,7 +58,7 @@ def tr_output(output, value):
     print(mycursor.rowcount, "record inserted to table tr_vystupy.")
 
 def tr_memory(memory, value):
-    sql = "INSERT INTO tr_vystupy (absolutna_adresa, hodnota, cas) VALUES(%s,%s,%s)";
+    sql = "INSERT INTO tr_vystupy (absolutna_adresa, hodnota, cas) VALUES(%s,%s,%s)"
     now = datetime.now()
     timeNow = dt_string = now.strftime("%Y-%m-%d %H:%M:%S")
     val =(memory, value, timeNow)
