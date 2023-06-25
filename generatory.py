@@ -34,6 +34,12 @@ def gen_memory_tr():
     return result
 
 
+def alarms():
+    alarms_list = ["Výrobok vypadol z upínača!", "Vyrobok sa nedostavil na pas"]
+    result = random.choice(alarms_list)
+    return result
+
+
 
 def gen_bool():
     bool_list=["true","false"]
