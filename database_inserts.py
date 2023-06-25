@@ -66,8 +66,13 @@ def tr_memory(memory, value):
     mydb.commit()
     print(mycursor.rowcount, "record inserted to table tr_memory.")
 
-
-
-
+def alarms(input1,input2,value):
+    sql = "INSERT INTO chyby(snimac1, snimac2, nazov_chyby, cas_chyby) VALUES(%s,%s,%s,%s)"
+    now = datetime.now()
+    timeNow = dt_string = now.strftime("%Y-%m-%d %H:%M:%S")
+    val = (input1, input2, value, timeNow)
+    mycursor.execute(sql, val)
+    mydb.commit()
+    print(mycursor.rowcount, "record inserted to table alarmy.")
 
 #def man_output():
